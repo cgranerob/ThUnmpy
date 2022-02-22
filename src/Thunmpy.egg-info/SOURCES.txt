@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/Thunmpy/Methods.py
+src/Thunmpy/ThunmFit.py
+src/Thunmpy/Thunmcorr.py
+src/Thunmpy/Thunmixing.py
+src/Thunmpy/__init__.py
+src/Thunmpy.egg-info/PKG-INFO
+src/Thunmpy.egg-info/SOURCES.txt
+src/Thunmpy.egg-info/dependency_links.txt
+src/Thunmpy.egg-info/top_level.txt
