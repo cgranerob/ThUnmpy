@@ -2,7 +2,7 @@
 
 All the sharpening methods of **Thunmpy** rely on the base that the fine-scale information in the shortwave optical domain (VNIR-SWIR) can be used to improve the resolution of the Land Surface Temperature (LST) images. To this end, these methods express the LST as a function of a given VNIR-SWIR feature (I): 
 
-<img src="https://render.githubusercontent.com/render/math?math= LST = f(I)">
+<img src="https://render.githubusercontent.com/render/math?math=LST=f(I)">
 
 These features (I) can be reflectance or radiance measures at a given wavelength or indices mixing measures at different wavelengths.
 
@@ -16,8 +16,8 @@ to high resolution VNIR-SWIR features to retrieve the LST images at this finer s
 
 Three main steps can be considered:
 
-- Fit of <img src="https://render.githubusercontent.com/render/math?math= LST_c = f(I_c)"> at coarse scale c.
-- Unmixing with the obtained fit parameters, <img src="https://render.githubusercontent.com/render/math?math= LST_f = f(I_f)">, where f indicates fine scale
+- Fit of <img src="https://render.githubusercontent.com/render/math?math=LST_c = f(I_c)"> at coarse scale c.
+- Unmixing with the obtained fit parameters, <img src="https://render.githubusercontent.com/render/math?math=LST_f = f(I_f)">, where f indicates fine scale
 - Residual correction
 
 # Contents of Thunmpy package
@@ -76,7 +76,7 @@ In order to install Thunmpy follow next instructions:
 
 - Install required packages
 - Download the full repository
-- From your terminal, go to the downloaded Thunmpy repository (<code>cd ~/Downloads/Thunmpy/ </code>) and, once on it, type (<code>pip install .</code>)
+- From your terminal, go to the downloaded Thunmpy repository <code>cd ~/Downloads/Thunmpy/ </code> and, once on it, type <code>pip install .</code>
 
 # References
 Granero-Belinchon, C.; Michel, A.; Lagouarde, J.-P.; Sobrino, J.A.; Briottet, X. **Multi-Resolution Study of Thermal Unmixing Techniques over Madrid Urban Area: Case Study of TRISHNA Mission**. Remote Sens. 2019, 11, 1251. <a href="https://doi.org/10.3390/rs11101251" > https://doi.org/10.3390/rs11101251 </a> an references therein.
