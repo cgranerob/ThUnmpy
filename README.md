@@ -79,7 +79,7 @@ In order to install Thunmpy follow next instructions:
 - From your terminal, go to the downloaded Thunmpy repository <code>cd ~/Downloads/Thunmpy/ </code> and, once on it, type <code>pip install .</code>
 
 # References
-Granero-Belinchon, C.; Michel, A.; Lagouarde, J.-P.; Sobrino, J.A.; Briottet, X. **Multi-Resolution Study of Thermal Unmixing Techniques over Madrid Urban Area: Case Study of TRISHNA Mission**. Remote Sens. 2019, 11, 1251. <a href="https://doi.org/10.3390/rs11101251" > https://doi.org/10.3390/rs11101251 </a> an references therein.
+Granero-Belinchon, C.; Michel, A.; Lagouarde, J.-P.; Sobrino, J.A.; Briottet, X. **Multi-Resolution Study of Thermal Unmixing Techniques over Madrid Urban Area: Case Study of TRISHNA Mission**. Remote Sens. 2019, 11, 1251. <a href="https://doi.org/10.3390/rs11101251" > https://doi.org/10.3390/rs11101251 </a> and references therein.
 
 # Contact
 
