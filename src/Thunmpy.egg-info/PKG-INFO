@@ -2,13 +2,13 @@ Metadata-Version: 2.1
 Name: Thunmpy
 Version: 0.0.1
 Summary: Thunmpy is a python library containing several sharpening functions for Land Surface Temperature images.
-Home-page: https://github.com/pypa/sampleproject
+Home-page: https://github.com/cgranerob/ThUnmpy
 Author: C. Granero Belinchon
 Author-email: carlos.granero-belinchon@imt-atlantique.fr
 License: UNKNOWN
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: CeCILL-C License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
