@@ -72,7 +72,7 @@ Required packages:
 - scipy
 - cv2
 
-In order to install Thunmpy follow next instructions:
+In order to install Thunmpy follow instructions below:
 
 - Install required packages
 - Download the full repository
