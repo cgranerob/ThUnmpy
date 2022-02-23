@@ -1,17 +1,17 @@
 # ThUnmpy : Thermal Unmixing library for python.
 
-All the sharpening methods of **Thunmpy** rely on the base that the fine-scale information in the shortwave optical domain (VNIR-SWIR) can be used to improve the resolution of the Land Surface Temperature (LST) images. To this end, these methods express the LST as a function of a given VNIR-SWIR feature (I): 
+All the sharpening methods of **Thunmpy** assume that the fine-scale information in the shortwave optical domain (VNIR-SWIR for Visible and Near InfraRed and Shortwave InfraRed) can be used to improve the resolution of the Land Surface Temperature (LST) images. To this end, these methods express the LST as a function of a given VNIR-SWIR feature (I): 
 
 <img src="https://render.githubusercontent.com/render/math?math=LST=f(I)">
 
-These features (I) can be reflectance or radiance measures at a given wavelength or indices mixing measures at different wavelengths.
+These features (I) can be reflectance or radiance measurements at a given wavelength or indices derived from measurements at different wavelengths.
 
-Thus these methods rely on two main hypotheses: 
+Thus these methods rely on two main hypothesis: 
 
 - we can find a parametric function describing the relationship between the LST and VNIR-SWIR features
 - this relationship is scale invariant
 
-In other words, based on these hypotheses, it is possible to obtain high resolution LST images by modelling the relationship between LST and VNIR-SWIR features at a coarse scale, and applying the model
+In other words, based on these hypothesis, it is possible to obtain high resolution LST images by modelling the relationship between LST and VNIR-SWIR features at a coarse scale, and applying the model
 to high resolution VNIR-SWIR features to retrieve the LST images at this finer scale. Finally, in order to enhance the high resolution result, a residual estimation is applied to correct fine-scale LST values.
 
 Three main steps can be considered:
@@ -23,7 +23,7 @@ Three main steps can be considered:
 # Contents of Thunmpy package
 This repository contains four main files with functions. Each function contains its description. 
 
-1) **ThunmFit**: contains several functions to perform fits of LST vs VNIR-SWIR indices.
+1) **ThunmFit**: contains several functions to perform fits of LST and VNIR-SWIR indices.
 
 	- linear_fit
 	- bilinear_fit
@@ -49,10 +49,10 @@ This repository contains four main files with functions. Each function contains 
 
 4) **Methods**: contains 4 second-layer functions directly performing sharpening methods.
 
-	- TsHARP
-	- HUTS
-	- ATPRK
-	- AATPRK
+	- TsHARP (Thermal sHARPening)
+	- HUTS (High-resolution Urban Thermal Sharpener)
+	- ATPRK (Area-To-Point Regression Kriging)
+	- AATPRK (Adaptive Area-To-Point Regression Kriging)
 
 In order to illustrate how to use Thunmpy, this repository also contains two notebooks and some small images in the "tests" folder:
 
@@ -60,7 +60,7 @@ In order to illustrate how to use Thunmpy, this repository also contains two not
 
 2) **Custom_functions.ipynb**: contains 1 script showing how to call functions from ThunmFit, Thunmixing and Thunmcorr in order to perform a bilinear sharpening.
 
-3) **Small images**: LST, Albedo and NDBI images at 20m and 100m are obtained from downscaling initial images from Madrid (Spain) obtained during the <a href="https://earth.esa.int/eogateway/campaigns/desirex-2008"> DESIREX</a> campaign in 2008 at 4m of spatial resolution. Here we provide only small images to illustrate the use of Thunmpy. 
+3) **Small images**: LST, Albedo and NDBI (Normalized Difference Built-up Index) images at 20m and 100m are obtained from downscaling initial images from Madrid (Spain) obtained during the <a href="https://earth.esa.int/eogateway/campaigns/desirex-2008"> DESIREX</a> campaign in 2008 at 4m of spatial resolution. Here we provide only small images to illustrate the use of Thunmpy. The classification image has been simplified from the original image and downscaled to illustrate the use of Thunmpy.
 
 # Installation
 
