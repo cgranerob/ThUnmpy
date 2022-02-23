@@ -215,7 +215,7 @@ def ATPRK(T_C, I_C, I_H, iscale, scc, block_size=5, sill=7, ran=1000, min_T=285,
     ###
     ######
     ###########
-    ############### C. Granero-Belinchon; IMT Atlantique, Brest; 02/2022
+    ############### C. Granero-Belinchon; IMT Atlantique, Brest and A. Michel; ONERA-DOTA, Toulouse; 02/2022
     '''
 
     # Reading index at coarse resolution
@@ -295,7 +295,7 @@ def AATPRK(T_C, I_C, I_H, iscale, scc, b_radius=2, block_size=5, sill=7, ran=100
     ###
     ######
     ###########
-    ############### C. Granero-Belinchon; IMT Atlantique, Brest; 02/2022
+    ############### C. Granero-Belinchon; IMT Atlantique, Brest and A. Michel; ONERA-DOTA, Toulouse; 02/2022
     '''
 
     # Reading index at coarse resolution
