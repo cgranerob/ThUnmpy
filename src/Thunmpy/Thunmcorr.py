@@ -157,7 +157,7 @@ def quality_correction(Temp, TT_unm, iscale, max_threshold=323, min_threshold=26
     fine pixel resolution inside a coarse pixel is the residual of the coarse 
     pixel (scale invariance hypothesis).
     
-    Before computing the residuals, this function look for pixels with temperature values
+    Before computing the residuals, this function looks for pixels with temperature values
     above max_thre +5 or below min_thre - 5 and recalculates the temperature of these 
     pixels by averaging the temperatures of the 5x5 squares containing each non-desired 
     temperature pixel in the center.
@@ -577,9 +577,9 @@ def correction_AATPRK(index, Temp, TT_unm, Slope_Intercept, iscale, scc, block_s
       	
     ############## Inputs/Outputs:
     
-    index (large scale): reflective index image, ex: NDVI, NDBI ...
+    index (coarse scale): reflective index image, ex: NDVI, NDBI ...
              
-    Temp (large scale): Temperature image. the background pixels must be == 0
+    Temp (coarse scale): Temperature image. the background pixels must be == 0
     
     TT_unm (fine scale): Sharpened temperature image. the background pixels must be == 0
     
