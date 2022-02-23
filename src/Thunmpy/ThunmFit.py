@@ -21,11 +21,11 @@ def linear_fit(index, Temp, min_T, path_fit=False, path_plot=False):
     	
     ############## Inputs:
     
-    index: refelctive index image, ex: NDVI, NDBI ...
+    index: reflective index image, ex: NDVI, NDBI ...
     
     Temp: Temperature image	
     
-    min_T: Minimum expected temperature in the image. All the temerpature 
+    min_T: Minimum expected temperature in the image. All the temperatures 
            below this one are considered spurious measures and not taken into account in the 
            regression.	
     
@@ -118,7 +118,7 @@ def bilinear_fit(index1, index2, Temp, min_T, path_fit):
     
     Temp: Temperature image	
     
-    min_T: Minimum expected temperature in the image. All the temerpature 
+    min_T: Minimum expected temperature in the image. All the temperatures 
            below this one are considered spurious measures and not taken into account in the 
            regression.	
     
@@ -202,7 +202,7 @@ def linear_fit_window(index, Temp, min_T, b_radius):
     
     Temp: Temperature image
     
-    min_T: Minimum expected temperature in the image. All the temerpature 
+    min_T: Minimum expected temperature in the image. All the temperatures 
            below this one are considered spurious measures and not taken into account in the 
            regression.	
     
@@ -319,7 +319,7 @@ def huts_fit(index, albedo, Temp, min_T, p=False, path_fit=False):
     
     Temp: Temperature image	
     
-    min_T: Minimum expected temperature in the image. All the temerpature 
+    min_T: Minimum expected temperature in the image. All the temperatures 
            below this one are considered spurious measures and not taken into account in the 
            regression.	
            
@@ -401,7 +401,7 @@ def fit_byclass(index, Temp, Class, min_T, path_fit=False, path_plot=False):
     
     Class : Classification image file. Background pixels =0
     
-    min_T: Minimum expected temperature in the image. All the temerpature 
+    min_T: Minimum expected temperature in the image. All the temperatures 
            below this one are considered spurious measures and not taken into account in the 
            regression.	
     
