@@ -434,14 +434,16 @@ def fit_byclass(index, Temp, Class, min_T, path_fit=False, path_plot=False):
 # Classification 
 
     fit_c=np.zeros((num_class,5))
-	
+    #creation of the header for the filetext
+    linehead = ''
+    
     for i in range(num_class):
-		
+	linehead = linehead + 'Class'+str(i+1)+' ' #creation of the header for the filetext
         cc = np.where(C==val_class[i])
         Ic = I[cc]
         Tc = T[cc]
 		
-		# Mask 
+	# Mask 
 			
         T_great_mask_c=np.greater(Tc,min_T) # We eliminate the background pixels and those with a temperature under 285K
         Tc=Tc[T_great_mask_c]
@@ -472,6 +474,6 @@ def fit_byclass(index, Temp, Class, min_T, path_fit=False, path_plot=False):
             print('Fit by class Done')
 	
     if path_fit!=False:
-        np.savetxt(path_fit,(fit_c[:,0],fit_c[:,1],fit_c[:,2],fit_c[:,3],fit_c[:,4]),fmt='%3.6f')
+        np.savetxt(path_fit,(fit_c[:,0],fit_c[:,1],fit_c[:,2],fit_c[:,3],fit_c[:,4]),header=linehead,fmt='%3.6f')
         
     return fit_c.T
