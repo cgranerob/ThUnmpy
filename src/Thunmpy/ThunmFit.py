@@ -417,7 +417,7 @@ def fit_byclass(index, Temp, Class, min_T, path_fit=False, path_plot=False):
     ###
     ######
     ###########
-    ############### C. Granero-Belinchon; IMT Atlantique, Brest; 12/2021
+    ############### C. Granero-Belinchon; IMT Atlantique, Brest and A. Michel; DOTA-ONERA, Toulouse; 12/2021
     '''
 
 # We obtain the number of classes and the value characterizing each class
