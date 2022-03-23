@@ -438,7 +438,7 @@ def fit_byclass(index, Temp, Class, min_T, path_fit=False, path_plot=False):
     linehead = ''
     
     for i in range(num_class):
-	linehead = linehead + 'Class'+str(i+1)+' ' #creation of the header for the filetext
+        linehead = linehead + 'Class'+str(i+1)+' ' #creation of the header for the filetext
         cc = np.where(C==val_class[i])
         Ic = I[cc]
         Tc = T[cc]
